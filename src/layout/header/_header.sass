@@ -1,0 +1,34 @@
+@use '../../base/reset'
+@use '../../base/_mixins'
+
+.header
+    width: 100%
+    .menu
+        display: flex
+        justify-content: flex-end
+        padding: 1rem
+        @include mixins.mobile
+            flex-direction: column
+            align-items: center
+
+        
+    .image-container
+        display: flex
+        position: absolute
+        justify-content: flex-start
+        align-items: stretch
+        left: 0px
+        top:0
+        width: 30rem
+        height: 20rem
+        @include mixins.mobile
+            display: block
+            position: static
+            margin: 0 auto
+        .img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            padding-bottom: 10rem
+            @include mixins.mobile
+                padding-bottom: 0

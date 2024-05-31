@@ -1,0 +1,28 @@
+@use'../../base/_mixins'
+
+.text
+    display: flex
+    flex-direction: column
+    padding: 1.5rem
+    @include mixins.mobile
+        justify-content: center
+        align-items: center
+    &__title
+        font-size: 6rem
+        font-weight: 500
+        color: #fff
+        @include mixins.mobile
+            text-align: center
+        
+    
+    &__subtitle
+        font-size: 4rem
+        color: #ffaa04
+    
+    &__desc
+        color: #fff
+        padding: 1rem
+        font-size: 1.5rem
+        max-width: 600px
+        @include mixins.mobile
+            text-align: center

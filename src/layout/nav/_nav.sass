@@ -1,0 +1,23 @@
+@use'../main.sass'
+@use '../../base/_mixins'
+
+.nav
+    display: flex
+    padding: .5rem
+
+    &__item
+        display: flex
+        justify-content: center
+        align-content: center
+        gap: 1rem
+        padding: .8rem
+        @include mixins.mobile
+            flex-direction: column
+        .item
+            color: #fff
+            font-size: 2rem
+            padding: .5rem
+            transition: .5s
+            cursor: pointer
+            &:hover
+                color: #ffaa04
