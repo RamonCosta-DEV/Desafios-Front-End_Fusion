@@ -7,7 +7,7 @@ function RoutesApp(){
     return(
         <BrowserRouter>
         <Routes>
-            <Route path="/Desafios-Front-End_Fusion" element={<Home/>}/>
+            <Route path="/" element={<Home/>}/>
             <Route path="/galeria" element={<Galeria/>}/>
             <Route path="/Formulario" element={<Formulario/>}/>
         </Routes>
